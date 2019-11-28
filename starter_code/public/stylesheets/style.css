@@ -1,0 +1,17 @@
+body{
+  background-image: url("/images/audience-1850119_1920.jpg");
+  background-size: cover ;
+  background-repeat: no-repeat ;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 15em;
+  width: 50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+
