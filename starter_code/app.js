@@ -2,7 +2,6 @@ require('dotenv').config()
 
 const express = require('express');
 const hbs = require('hbs');
-
 const SpotifyWebApi=require("spotify-web-api-node");
 
 
@@ -29,12 +28,10 @@ const spotifyApi = new SpotifyWebApi({
       console.log("Something went wrong when retrieving an access token", error);
     });
 
-
-
-
-
-
-// the routes go here:
+    app.get('/',function(req, res, next){
+        console.log('ok')
+        res.render('layout')
+    })
 
 
 
