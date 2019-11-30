@@ -1,0 +1,9 @@
+<div class="artistCard">
+    {{#each images}}
+        {{#if @first}}
+            <img src="{{url}}" alt="Cover">
+        {{/if}}
+    {{/each}}
+    <h2>{{name}}</h2>
+    <a href="{{href}}">View album</a>
+</div>
