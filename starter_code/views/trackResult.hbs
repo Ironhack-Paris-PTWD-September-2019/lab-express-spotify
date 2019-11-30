@@ -1,0 +1,14 @@
+<div class="track-container">
+  <table class='track-table'>
+  <tr>
+    <th class='col-name'>Title</th>
+    <th class='col-audio'>Listen</th>
+  </tr>
+  {{#each tracks}}
+  <tr>
+    <td class="col-name">{{trackName}}</td>
+    <td class="col-audio"><audio controls src="{{trackPrev}}"></audio></td>
+  </tr>
+  {{/each}}
+</table>
+</div>

@@ -1,0 +1,108 @@
+* {box-sizing: border-box;}
+
+.home {
+  background-image: url("https://static.pexels.com/photos/167605/pexels-photo-167605.jpeg");
+  height:100vh;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .form-container {
+width: 28%;
+padding: 3.5em 0em;
+background-color:rgba(255, 255, 255, 0.6)
+  
+}
+.home  .form-container form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home  .form-container form input{
+  width: 60%;
+  border-radius: 6px;
+  margin-bottom: 0.7em;
+  font-size: 1em;
+  height: 40px;
+  border: 1px solid rgba(0,0,0,.15);
+  padding: 1em; 
+}
+
+.btn {
+  background-color: #ff6666;
+  color:white; 
+  text-align:center;
+  padding:0.7em;
+  border:1px;
+  font-size:1em;
+}
+
+.link {
+  text-decoration:none;
+  border-radius: 4px;
+  padding: 2px 9px;
+  margin-bottom: 0.5em;
+}
+
+.card-container {
+  display:flex; 
+  flex-wrap: wrap;
+
+}
+
+.card {
+  width:300px;
+  background-color:#4d4d4d;
+  margin: 1em;
+  display: flex;
+  flex-flow: column;
+  align-items: center
+}
+
+.card h1 {
+  color:white;
+  font-size: 22px;
+  margin: 7px auto;
+}
+
+.card img {
+  width:100%;
+}
+
+.track-container {
+ display:flex;
+ justify-content: center;
+}
+
+.track-table {
+  width:70%;
+}
+
+.track-table th {
+  font-size: 1.5em;
+  background-color:#4a4a4a;
+  color:white;
+  padding: 0.7em;
+  text-align: left;
+  border:none;
+}
+
+.track-table td {
+  padding: 0.7em;
+  text-align: left;
+  background-color:#f6f6f6;
+  font-size:22px;
+}
+.track-table .col-name {
+  width:60%
+
+}
+.track-table .col-audio {
+  width:30%
+
+}
