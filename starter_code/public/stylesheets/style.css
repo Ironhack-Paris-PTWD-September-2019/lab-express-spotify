@@ -13,3 +13,56 @@ body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#artistsContainer {
+    text-align: center;
+}
+
+#artistsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#artistsList .artistCard {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: calc(100% / 3 - var(--gutter));
+    background-color: #4D4D4D;
+    margin-bottom: var(--gutter);
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1em;
+}
+@media (min-width: 400px) {
+    #artistsList .artistCard {
+        max-width: 400px;
+    }
+}
+
+#artistsList .artistCard img {
+    height: 12em;
+    width: 100%;
+}
+@media (min-width: 400px) {
+    #artistsList .artistCard img {
+        height: 20em;   
+    }
+}
+
+#artistsList .artistCard h2 {
+    color: white;
+    font-size: 1.5em;
+}
+
+#artistsList .artistCard a {
+    background-color: #EC6866;
+    padding: .6em 1.2em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:.8em;
+    border-radius: .5em;
+}
