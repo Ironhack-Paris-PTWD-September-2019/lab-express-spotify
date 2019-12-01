@@ -1,0 +1,83 @@
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.artist-container {
+    width:calc(100% / 4);
+    margin: 10px;
+    background-color: gray;
+}
+
+.artist-container img {
+    width: 100%;
+    display:block;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.artist-container h3 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.containsearch{
+    height: 100vh;
+    background-image: url('https://static.pexels.com/photos/167605/pexels-photo-167605.jpeg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containinput{
+    width: 500px;
+    background-color:rgba(255,255,255,0.5);
+    padding: 60px;
+}
+
+.containinput input{
+    height: 30px;
+    width: 500px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    color: white;
+    margin-top: 10px;
+    background-color: #ff6666;
+    padding: 5px;
+    border: none;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    color: white;
+    background-color: gray;
+}
+
+.trackscontainer {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color:#f6f6f6;
+}

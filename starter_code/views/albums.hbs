@@ -1,9 +1,15 @@
+<div class="container">
 {{#each albumsitems}}
-    <p>{{{this.name}}}</p>
-    <a href="/tracks/{{this.id}}">View Tracks</a>
+<div class="artist-container">
     {{#each this.images}}
         {{#if @first}}
             <img src={{{this.url}}}>
         {{/if}}
     {{/each}}
+    
+    <h3>{{{this.name}}}</h3>
+    <a href="/tracks/{{this.id}}">View Tracks</a>
+   
+    </div>
 {{/each}}
+</div>

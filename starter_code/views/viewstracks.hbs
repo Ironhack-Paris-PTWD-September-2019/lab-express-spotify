@@ -1,5 +1,12 @@
+
+<div class="title">
+    <h3>Title</h3>
+    <h3>Listen</h3>
+</div>
 {{#each tracksitems}}
+
     <figure>
+        <div class="trackscontainer">
     <figcaption>{{{this.name}}}:</figcaption>
     <audio
         controls
@@ -7,5 +14,7 @@
             Your browser does not support the
             <code>audio</code> element.
     </audio>
+    </div>
     </figure>
+    
     {{/each}}

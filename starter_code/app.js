@@ -64,7 +64,6 @@ app.get("/albums/:artistId", (req, res, next) => {
       let datas = {
         albumsitems : data.body.items,
       }
-      console.log(data.body.items[0].id)
       res.render('albums' , datas)
       //console.log('Artist albums', data.body);
     },
@@ -87,7 +86,6 @@ app.get('/tracks/:albumsId', (req, res, next) => {
       let datas = {
         tracksitems : data.body.items,
       }
-      console.log(data.body)
       res.render('viewstracks' , datas)
       //console.log('Artist albums', data.body);
     },
