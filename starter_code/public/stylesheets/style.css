@@ -1,0 +1,47 @@
+*, :before, :after {box-sizing:border-box;}
+
+body {
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/images/concert.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  height: 12em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+}
+
+.home-search {
+  margin-top: 10px;
+  background-color: black;
+  border-radius: 0;
+  color: white;
+  background-color: #ff6666;
+  border: 1px solid #ff6666;
+}
+
+.home-search:hover, .home-search:active {
+  color: #ff6666;
+  background-color: white;
+  border: 1px solid #ff6666;
+}
+
+.artist-page {
+  background-color: white;
+}
