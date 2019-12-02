@@ -1,0 +1,14 @@
+<div id="albumContainer">
+    <h1>Tracks</h1>
+    <div id="tracksList">
+        <div class="tracksListHeader">
+            <div>Title</div>
+            <div>Listen</div>
+        </div>
+        <div class="tracksListBody">
+            {{#each tracks}}
+            {{> trackLine}}
+            {{/each}}
+        </div>
+    </div>
+</div>
