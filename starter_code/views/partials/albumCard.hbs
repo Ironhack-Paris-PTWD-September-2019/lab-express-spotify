@@ -1,0 +1,13 @@
+<div class="albumCard">
+    {{#if images}}
+        {{#each images}}
+            {{#if @first}}
+                <img src="{{url}}" alt="Cover">
+            {{/if}}
+        {{/each}}
+    {{else}}
+        <img src="/images/default-cover.png" alt="default cover">
+    {{/if}}   
+    <h2>{{name}}</h2>
+    <a href="/album/{{id}}">View tracks</a>
+</div>
