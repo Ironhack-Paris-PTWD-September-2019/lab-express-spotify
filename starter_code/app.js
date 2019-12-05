@@ -90,7 +90,7 @@ app.get("/tracks/:albumId", (req, res, next) => {
     spotifyApi
         .getAlbumTracks(req.params.albumId)
         .then(data => {
-            console.log("The received data from the API: ", data.body);
+            // console.log("The received data from the API: ", data.body);
             res.render('tracks', data.body)
         })
         .catch(err => {
