@@ -11,6 +11,7 @@ const app = express();
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
+hbs.registerPartials(__dirname + '/views/partials');
 app.use(express.static(__dirname + '/public'));
 
 
@@ -35,9 +36,21 @@ app.get('/', (req, res, next) => {
     res.render('home-page');
 });
 
-app.get('/artists', (req, res, next) => {
-    res.render('artists');
+app.get('/artists', (req, res, next) =>{
+    // res.send(req.query);
+    spotifyApi
+      .searchArtists(req.query)
+      .then(data => {
+        console.log("The received data from the API: ", data.body);
+        // ----> 'HERE WHAT WE WANT TO DO AFTER RECEIVING THE DATA FROM THE API'
+        res.render('artists', {artist});
+    })
+    .catch(err => {
+      console.log("The error while searching artists occurred: ", err);
+    });
 });
+
+
 
 
 app.listen(3000, () => console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊"));
