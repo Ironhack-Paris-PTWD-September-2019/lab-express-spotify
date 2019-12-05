@@ -9,6 +9,12 @@ h1 {
 	color: white;
 	font-size: 50px;
 	text-align: center;
+	margin: 0.25em 0;
+}
+
+audio {
+	background: none;
+	border: none;
 }
 
 body {
@@ -20,6 +26,8 @@ body {
 	align-items: center;
 	background-color: black;
 	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
 }
 
 form {
@@ -74,4 +82,34 @@ img {
 	text-align: center;
 	justify-content: center;
 	margin: 2em 5em;
+}
+
+.tab-tracks {
+	width: 70vw;
+	border: 0;
+	border-collapse: collapse;
+}
+
+.tab-tracks thead tr {
+	background-color: #4a4a4a;
+	color: #b8c0c6;
+	text-align: left;
+}
+.tab-tracks thead th {
+	font-size: 110%;
+	padding: 1em 2em;
+}
+.tab-tracks thead th:nth-child(1) {
+	width: 40vw;
+}
+
+.tab-tracks tbody tr {
+	background-color: #f2f3f5;
+	color: #4a4a4a;
+	padding: 2em;
+	margin-bottom: 10px;
+}
+.tab-tracks tbody td {
+	padding: 0.5em 2em;
+	font-size: 110%;
 }

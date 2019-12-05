@@ -1,0 +1,17 @@
+<h1>Tracks</h1>
+<table class="tab-tracks">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Listen</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each this.items}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td><audio controls src={{this.preview_url}} preload="auto"></audio></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
