@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60vw;
+	height: 10vh;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 10vh 0;
+}
+
+input {
+	width: 40vw;
+	padding: 0.75em 1.5em;
+	border-radius: 0.2em;
+	margin-bottom: 1em;
+}
+
+button {
+	background-color: #ff6666;
+	color: white;
+	padding: 0.75em 1.5em;
+}
