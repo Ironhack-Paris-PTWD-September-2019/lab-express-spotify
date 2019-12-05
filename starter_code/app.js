@@ -32,8 +32,24 @@ spotifyApi
     });
 
 // the routes go here:
-app.get("/", function (req, res, next) {
+app.get("/", (req, res, next) => {
     res.render('homepage');
+})
+
+app.get("/artists", (req, res, next) => {
+    // console.log(req.params)
+
+    spotifyApi
+        .searchArtists(`${req.query.artist}`)
+        .then(data => {
+            console.log("The received data from the API: ", data.body.artists.items);
+            // ----> 'HERE WHAT WE WANT TO DO AFTER RECEIVING THE DATA FROM THE API'
+            res.render('artists', data.body.artists)
+        })
+        .catch(err => {
+            console.log("The error while searching artists occurred: ", err);
+        });
+
 })
 
 

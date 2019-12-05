@@ -4,13 +4,20 @@
 	border: none;
 }
 
+h1 {
+	color: white;
+	font-size: 50px;
+}
+
 body {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	background-color: black;
+	color: white;
 }
 
 form {
@@ -35,4 +42,27 @@ button {
 	background-color: #ff6666;
 	color: white;
 	padding: 0.75em 1.5em;
+	text-decoration: none;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	background-color: #ff6666;
+	color: white;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-radius: 0.2em;
+}
+img {
+	width: 100px;
+	height: 100px;
+}
+
+.artist-card {
+	width: 30vw;
+	text-align: center;
+	justify-content: center;
 }
