@@ -1,0 +1,15 @@
+<div class="page-artists">
+  <ul>
+  {{#each artists}}
+    <li>
+      <div class="card">
+        <img src="{{images.0.url}}">
+        <div class="figcaption">
+          <div>{{name}}</div>
+          <a class="btn" href="/albums/{{id}}">view albums</a>
+        </div>
+      </div>
+    </li>
+  {{/each}}
+  </ul>
+</div>

@@ -1,0 +1,136 @@
+*, :before, :after {box-sizing:border-box;}
+
+body {
+  margin:0;
+
+  font-family:sans-serif;
+}
+
+a {color:inherit;}
+
+button,
+input {font:inherit;}
+
+.btn {
+  background-color:#fb6863;
+  color:white;
+  padding:.5em;
+  display:inline-block;
+}
+
+/*
+  ####    ##   #####  #####  
+ #    #  #  #  #    # #    # 
+ #      #    # #    # #    # 
+ #      ###### #####  #    # 
+ #    # #    # #   #  #    # 
+  ####  #    # #    # #####  
+*/
+
+.card {
+  background:#333; color:white;
+  text-align:center;
+}
+
+.card .figcaption {padding:1em 0;}
+
+.card img {
+  display:block;
+  width:100%; height:15em; object-fit:cover;
+}
+
+.card .btn {margin-top:.5em;}
+
+/*
+##     ##  #######  ##     ## ######## 
+##     ## ##     ## ###   ### ##       
+##     ## ##     ## #### #### ##       
+######### ##     ## ## ### ## ######   
+##     ## ##     ## ##     ## ##       
+##     ## ##     ## ##     ## ##       
+##     ##  #######  ##     ## ######## 
+*/
+
+.page-home {
+  min-height:100vh; display:flex; align-items:center;
+  justify-content:center;
+
+  background:url("../images/pexels.jpeg") center no-repeat /cover;
+}
+
+.page-home form {
+  background-color:rgba(255,255,255,.5);
+  padding:3em 5em;
+
+  text-align:center;
+}
+
+.page-home form input {
+  width:15em;
+}
+
+.page-home form p {margin-bottom:0;}
+
+/*
+   ###    ########  ######## ####  ######  ########  ######  
+  ## ##   ##     ##    ##     ##  ##    ##    ##    ##    ## 
+ ##   ##  ##     ##    ##     ##  ##          ##    ##       
+##     ## ########     ##     ##   ######     ##     ######  
+######### ##   ##      ##     ##        ##    ##          ## 
+##     ## ##    ##     ##     ##  ##    ##    ##    ##    ## 
+##     ## ##     ##    ##    ####  ######     ##     ######  
+*/
+
+.page-artists ul,
+.page-albums ul {
+  padding-left:0; list-style:none;
+  display:flex; flex-wrap:wrap;
+
+  width:80%; margin:0 auto;
+}
+.page-artists li,
+.page-albums li {
+  width:33.33333%;
+  text-align:center;
+
+  padding-right:1em;
+  margin-bottom:1em;
+}
+.page-artists li:nth-of-type(3n),
+.page-albums li:nth-of-type(3n) {padding-right:0;}
+
+/*
+   ###    ##       ########  ##     ## ##     ##  ######  
+  ## ##   ##       ##     ## ##     ## ###   ### ##    ## 
+ ##   ##  ##       ##     ## ##     ## #### #### ##       
+##     ## ##       ########  ##     ## ## ### ##  ######  
+######### ##       ##     ## ##     ## ##     ##       ## 
+##     ## ##       ##     ## ##     ## ##     ## ##    ## 
+##     ## ######## ########   #######  ##     ##  ######  
+*/
+
+.page-albums {}
+
+/*
+######## ########     ###     ######  ##    ##  ######  
+   ##    ##     ##   ## ##   ##    ## ##   ##  ##    ## 
+   ##    ##     ##  ##   ##  ##       ##  ##   ##       
+   ##    ########  ##     ## ##       #####     ######  
+   ##    ##   ##   ######### ##       ##  ##         ## 
+   ##    ##    ##  ##     ## ##    ## ##   ##  ##    ## 
+   ##    ##     ## ##     ##  ######  ##    ##  ######  
+*/
+
+.page-tracks {
+  width:80%; margin:0 auto;
+}
+
+.page-tracks table {width:100%; border-collapse:collapse;}
+
+.page-tracks th {padding:1em;}
+
+.page-tracks thead {background:#333; color:white;}
+
+.page-tracks td {padding:.5em 0;}
+
+.page-tracks tbody td +td {text-align:right;} 
