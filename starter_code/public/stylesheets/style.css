@@ -1,0 +1,53 @@
+
+* :before, :after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    /* background-image: url(../images/spotify-img.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+
+.form-hp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1; 
+
+}
+
+form {
+    margin-top: 15em;
+    margin-bottom: 15em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    border:0; font:inherit;
+    background: rgba(240, 239, 239, 0.8);
+}
+
+.typing {
+    margin-top: 1em;
+}
+
+input {
+    width: 40em;
+}
+
+.btn {
+    display: block;
+    font-family:"Intro", sans-serif;
+    background: red;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
