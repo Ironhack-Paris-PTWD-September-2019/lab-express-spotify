@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+h1 {
+	width: 100vw;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	margin: 0.25em 0;
+}
+
+audio {
+	background: none;
+	border: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 60vw;
+	height: 10vh;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 10vh 0;
+}
+
+input {
+	width: 40vw;
+	padding: 0.75em 1.5em;
+	border-radius: 0.2em;
+	margin-bottom: 1em;
+}
+
+button {
+	background-color: #ff6666;
+	color: white;
+	padding: 0.75em 1.5em;
+	text-decoration: none;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	background-color: #ff6666;
+	color: white;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-radius: 0.2em;
+	width: fit-content;
+	margin: 0 auto;
+}
+img {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 1em;
+}
+
+.artist-card,
+.album-card {
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	margin: 2em 5em;
+}
+
+.tab-tracks {
+	width: 70vw;
+	border: 0;
+	border-collapse: collapse;
+}
+
+.tab-tracks thead tr {
+	background-color: #4a4a4a;
+	color: #b8c0c6;
+	text-align: left;
+}
+.tab-tracks thead th {
+	font-size: 110%;
+	padding: 1em 2em;
+}
+.tab-tracks thead th:nth-child(1) {
+	width: 40vw;
+}
+
+.tab-tracks tbody tr {
+	background-color: #f2f3f5;
+	color: #4a4a4a;
+	padding: 2em;
+	margin-bottom: 10px;
+}
+.tab-tracks tbody td {
+	padding: 0.5em 2em;
+	font-size: 110%;
+}
