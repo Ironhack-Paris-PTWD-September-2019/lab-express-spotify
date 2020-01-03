@@ -1,0 +1,22 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Albums</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+  </head>
+  <body> --}}
+    <div class="albums-page">
+    {{#each albums}}
+  <div class="album">
+  <img src="{{this.images.0.url}}" class="artist-img" width=200>
+  {{!-- j'ai checké la solution pour les points autour du 0, je mettais images[0] et ça ne marchait évidemment pas --}}
+  <div class="artist-body">
+    <h2 class="artist-name">{{this.name}}</h2>
+    <div class="artist-albums"><a href="/tracks/{{this.id}}">View tracks</a></div>
+  </div>
+</div>
+    {{/each}}
+    </div>
+  {{!-- </body>
+</html> --}}
