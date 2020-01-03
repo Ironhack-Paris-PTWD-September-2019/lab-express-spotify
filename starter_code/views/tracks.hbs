@@ -1,0 +1,36 @@
+
+        <div class="tracks-page">
+            {{#each tracks}}
+                <div class="track">
+                    <div class="title">
+                        <h3>{{name}}</h3>
+                    </div>
+                    <div class="track-player">
+                        <audio controls src="{{preview_url}}"></audio>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+{{!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tracks</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+    </head>
+    <body>
+        <div class="tracks-page">
+            {{#each tracks}}
+                <div class="track">
+                    <div class="title">
+                        <h3>{{name}}</h3>
+                    </div>
+                    <div class="track-player">
+                        <audio controls src="{{preview_url}}"></audio>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </body>
+</html> --}}
